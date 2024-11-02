@@ -1,0 +1,47 @@
+Here’s the expected output for each step in the **Credit Card Encryption and Decryption** project:
+
+### 1. **Starting the Flask Server**
+   - Run `python app.py` in your terminal. You should see output similar to:
+
+     ```
+     * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+     ```
+
+### 2. **Accessing the Web Application**
+
+   - Open a browser and go to `http://127.0.0.1:5000/`. You should see a simple webpage titled **Credit Card Encryption System** with two sections:
+     - **Encrypt**: A field where you can enter a credit card number and click “Encrypt.”
+     - **Decrypt**: A field where you can paste encrypted data and click “Decrypt.”
+
+### 3. **Encrypting a Credit Card Number**
+
+   - Enter a credit card number (e.g., `1234567812345678`) in the **Encrypt** section and click the **Encrypt** button.
+   - The page will reload, and a message will display the encrypted version of the card number. For example:
+
+     ```
+     Encrypted Card Number: kLr3jdRX9VblFH+Zg0o2fjks8HZwRY==
+     ```
+
+   - This output is in **Base64** format, representing the encrypted data.
+
+### 4. **Decrypting the Encrypted Data**
+
+   - Copy the encrypted data from the encryption output.
+   - Paste it into the **Decrypt** section’s input field and click **Decrypt**.
+   - The page will reload, displaying a message with the original credit card number:
+
+     ```
+     Decrypted Card Number: 1234567812345678
+     ```
+
+### **Error Handling**
+
+   - If you input invalid or improperly formatted encrypted data, an error message will display:
+
+     ```
+     Error: Invalid encrypted data.
+     ```
+
+### **Summary of Visual Output**
+
+On each form submission, results (encrypted or decrypted) will appear as flash messages at the bottom of the page, either confirming the encrypted or decrypted data or showing error messages if any issues occur.
